@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Q7 {
+    public static void main(String[] args) {
+        int size;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array length : ");
+        size=sc.nextInt();
+        int [] numbers = new int[size] ;
+        for (int i = 0; i <numbers.length ; i++) {
+            System.out.println("Enter a number : ");
+            numbers[i]=sc.nextInt();
+        }
+        for (int i = 0; i <numbers.length ; i++) {
+
+            if (numbers[i]%3==0){
+                System.out.print(numbers[i]+ "  ");
+            }
+        }
+    }
+}
